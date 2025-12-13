@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="eldafiles.jpg" alt="Eldafiles Banner">
+</p>
+
 # Eldafiles
 
 Dépôt centralisant mes fichiers de configuration et scripts d'installation pour Windows et Linux.
