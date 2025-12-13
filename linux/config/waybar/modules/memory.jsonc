@@ -1,0 +1,4 @@
+"memory": { 
+  "interval": 30, 
+  "format": "{percentage}%" 
+},

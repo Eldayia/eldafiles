@@ -1,0 +1,9 @@
+"pulseaudio": {
+  "format": "{icon} {volume}%",
+  "format-icons": {
+    "default": ["\uf026", "\uf027", "\uf028"]
+  },
+  "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+  "on-click-right": "pavucontrol",
+  "format-muted": "\uf00d {volume}%"
+},

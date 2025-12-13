@@ -1,0 +1,307 @@
+═══════════════════════════════════════════════════════════════════════════════
+LISTE DES PAQUETS INSTALLÉS PAR INSTALLALL.SH
+═══════════════════════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════════════════════
+GESTIONNAIRE DE PAQUETS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. yay
+   Description: AUR helper pour Arch Linux
+   Utilité: Permet d'installer des paquets depuis l'Arch User Repository (AUR)
+
+═══════════════════════════════════════════════════════════════════════════════
+OUTILS CLI DE BASE
+═══════════════════════════════════════════════════════════════════════════════
+
+2. figlet
+   Description: Outil pour créer des bannières de texte ASCII
+   Utilité: Affichage de texte stylisé dans le terminal
+
+3. lolcat
+   Description: Outil pour afficher du texte avec des couleurs arc-en-ciel
+   Utilité: Coloration arc-en-ciel de la sortie du terminal
+
+═══════════════════════════════════════════════════════════════════════════════
+POLICES
+═══════════════════════════════════════════════════════════════════════════════
+
+4. ttf-jetbrains-mono-nerd
+   Description: Police JetBrains Mono Nerd Font
+   Utilité: Police monospace avec des icônes et symboles pour le terminal
+
+═══════════════════════════════════════════════════════════════════════════════
+APPLICATIONS THÉMATIQUES ET CONFIGURATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+5. plymouth
+   Description: Animation graphique de démarrage
+   Utilité: Affiche une animation lors du démarrage du système
+
+6. ly
+   Description: Gestionnaire d'affichage (display manager) léger
+   Utilité: Écran de connexion en mode TUI pour Wayland/X11
+
+7. ly-config
+   Description: Configuration personnalisée pour Ly
+   Utilité: Configuration du gestionnaire d'affichage
+
+8. waybar
+   Description: Barre personnalisable pour Wayland
+   Utilité: Barre de statut pour les compositeurs Wayland (Sway, etc.)
+
+═══════════════════════════════════════════════════════════════════════════════
+UTILITAIRES SYSTÈME
+═══════════════════════════════════════════════════════════════════════════════
+
+9. brightnessctl
+    Description: Contrôle de la luminosité de l'écran
+    Utilité: Ajustement de la luminosité en ligne de commande
+
+10. grim
+    Description: Utilitaire de capture d'écran pour Wayland
+    Utilité: Prendre des captures d'écran sous Wayland
+
+11. swappy
+    Description: Éditeur de captures d'écran pour Wayland
+    Utilité: Édition et annotation de captures d'écran
+
+12. playerctl
+    Description: Contrôle des lecteurs multimédias
+    Utilité: Contrôle de la lecture audio/vidéo en ligne de commande
+
+═══════════════════════════════════════════════════════════════════════════════
+ÉMULATEURS DE TERMINAL
+═══════════════════════════════════════════════════════════════════════════════
+
+13. ghostty
+    Description: Émulateur de terminal accéléré par GPU
+    Utilité: Terminal moderne et performant
+
+14. ttyd
+    Description: Partage de terminal via le web
+    Utilité: Accès au terminal via navigateur web
+
+═══════════════════════════════════════════════════════════════════════════════
+SHELLS ET AMÉLIORATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+15. nushell
+    Description: Shell moderne avec support structuré
+    Utilité: Shell alternatif avec traitement de données structurées
+
+16. zoxide
+    Description: Commande cd intelligente
+    Utilité: Navigation rapide dans les répertoires fréquents
+
+17. zellij
+    Description: Multiplexeur de terminal workspace
+    Utilité: Gestion de plusieurs sessions terminal (alternative à tmux)
+
+18. fzf
+    Description: Recherche floue en ligne de commande
+    Utilité: Sélection interactive et recherche floue de fichiers/commandes
+
+19. atuin
+    Description: Historique de shell magique
+    Utilité: Gestion avancée de l'historique des commandes
+
+═══════════════════════════════════════════════════════════════════════════════
+APPLICATIONS TUI (TERMINAL USER INTERFACE)
+═══════════════════════════════════════════════════════════════════════════════
+
+20. newsboat
+    Description: Lecteur de flux RSS/Atom pour terminal
+    Utilité: Lecture de flux d'actualités en mode texte
+
+21. ncdu
+    Description: Analyseur d'utilisation disque avec interface Ncurses
+    Utilité: Visualisation de l'espace disque utilisé
+
+22. yazi
+    Description: Gestionnaire de fichiers moderne pour terminal
+    Utilité: Navigation et gestion de fichiers en TUI
+
+23. btop
+    Description: Moniteur de ressources système
+    Utilité: Surveillance CPU, mémoire, disques, réseau et processus
+
+24. termshark
+    Description: Interface TUI pour tshark (Wireshark)
+    Utilité: Analyse de paquets réseau dans le terminal
+
+25. lazygit
+    Description: Interface TUI simple pour git
+    Utilité: Gestion Git visuelle et interactive
+
+═══════════════════════════════════════════════════════════════════════════════
+OUTILS CLI GÉNÉRAUX
+═══════════════════════════════════════════════════════════════════════════════
+
+26. bat
+    Description: Clone de cat avec coloration syntaxique
+    Utilité: Affichage de fichiers avec mise en forme et intégration Git
+
+27. croc
+    Description: Transfert sécurisé de fichiers
+    Utilité: Envoi de fichiers/dossiers entre machines
+
+28. grex
+    Description: Générateur d'expressions régulières
+    Utilité: Création automatique de regex à partir d'exemples
+
+29. ripgrep
+    Description: Outil de recherche en ligne de commande
+    Utilité: Recherche de texte ultra-rapide dans les fichiers
+
+30. fd
+    Description: Alternative moderne à find
+    Utilité: Recherche de fichiers simple et rapide
+
+31. asciinema
+    Description: Enregistreur de sessions terminal
+    Utilité: Enregistrement et partage de sessions terminal
+
+32. jrnl
+    Description: Application de journal en ligne de commande
+    Utilité: Tenue d'un journal personnel via CLI
+
+33. doppler
+    Description: CLI Doppler pour gestion de secrets
+    Utilité: Gestion sécurisée de secrets et variables d'environnement
+
+34. duf
+    Description: Utilitaire d'utilisation/libération disque
+    Utilité: Vue moderne de l'espace disque (alternative à df)
+
+35. mtr
+    Description: Outil de diagnostic réseau
+    Utilité: Combinaison de ping et traceroute
+
+36. progress
+    Description: Moniteur de progression des commandes coreutils
+    Utilité: Affichage de la progression des commandes (cp, mv, etc.)
+
+37. dog
+    Description: Client DNS en ligne de commande
+    Utilité: Requêtes DNS (alternative moderne à dig)
+
+38. ipcalc
+    Description: Calculateur d'adresses IP
+    Utilité: Calculs et conversions d'adresses IP/sous-réseaux
+
+39. procs
+    Description: Remplacement moderne de ps
+    Utilité: Affichage des processus avec informations enrichies
+
+40. rsync
+    Description: Utilitaire de copie et synchronisation de fichiers
+    Utilité: Synchronisation et sauvegarde de fichiers
+
+41. shred (coreutils)
+    Description: Suppression sécurisée de fichiers
+    Utilité: Écrasement sécurisé de fichiers avant suppression
+
+42. unp
+    Description: Script de décompression d'archives
+    Utilité: Décompression automatique de divers formats
+
+43. jq
+    Description: Processeur JSON en ligne de commande
+    Utilité: Manipulation et analyse de données JSON
+
+44. moreutils
+    Description: Collection d'outils Unix utiles
+    Utilité: Outils supplémentaires (sponge, vipe, ts, etc.)
+
+45. starship
+    Description: Prompt personnalisable pour shell
+    Utilité: Prompt rapide et informative pour tous les shells
+
+46. agg
+    Description: Agrégateur d'enregistrements de sessions terminal
+    Utilité: Conversion d'enregistrements asciinema en GIF/vidéo
+
+═══════════════════════════════════════════════════════════════════════════════
+OUTILS DE DÉVELOPPEMENT
+═══════════════════════════════════════════════════════════════════════════════
+
+47. diff-so-fancy
+    Description: Affichage amélioré des diff Git
+    Utilité: Visualisation des différences Git plus lisible
+
+48. stow
+    Description: Gestionnaire de ferme de liens symboliques
+    Utilité: Gestion de dotfiles avec symlinks
+
+═══════════════════════════════════════════════════════════════════════════════
+AUDIO
+═══════════════════════════════════════════════════════════════════════════════
+
+49. pipewire
+    Description: Serveur audio PipeWire
+    Utilité: Gestion moderne de l'audio sous Linux
+
+50. pipewire-pulse
+    Description: Remplacement PulseAudio pour PipeWire
+    Utilité: Compatibilité avec les applications PulseAudio
+
+51. pipewire-alsa
+    Description: Support ALSA pour PipeWire
+    Utilité: Compatibilité avec les applications ALSA
+
+52. alsa-utils
+    Description: Utilitaires ALSA
+    Utilité: Outils de configuration et contrôle audio ALSA
+
+53. pavucontrol
+    Description: Contrôle de volume pour PulseAudio
+    Utilité: Interface graphique de gestion audio
+
+═══════════════════════════════════════════════════════════════════════════════
+SÉCURITÉ
+═══════════════════════════════════════════════════════════════════════════════
+
+54. SSH Key (ED25519)
+    Description: Clé SSH générée
+    Utilité: Authentification sécurisée SSH
+
+55. pass
+    Description: Gestionnaire de mots de passe Unix standard
+    Utilité: Gestion de mots de passe chiffrés avec GPG
+
+═══════════════════════════════════════════════════════════════════════════════
+CONTENEURISATION
+═══════════════════════════════════════════════════════════════════════════════
+
+56. podman
+    Description: Moteur de conteneurs sans daemon
+    Utilité: Gestion de conteneurs (alternative à Docker)
+
+═══════════════════════════════════════════════════════════════════════════════
+NAVIGATEURS WEB
+═══════════════════════════════════════════════════════════════════════════════
+
+57. microsoft-edge-stable-bin
+    Description: Navigateur Microsoft Edge
+    Utilité: Navigateur web basé sur Chromium
+
+58. warp-terminal
+    Description: Terminal Warp avec fonctionnalités AI
+    Utilité: Terminal moderne avec assistance IA et collaboration
+
+═══════════════════════════════════════════════════════════════════════════════
+COMMUNICATION
+═══════════════════════════════════════════════════════════════════════════════
+
+59. vesktop
+    Description: Client Discord avec améliorations
+    Utilité: Application Discord avec optimisations de performance et vie privée
+
+60. fluffychat-bin
+    Description: Client Matrix
+    Utilité: Messagerie décentralisée via le protocole Matrix
+
+═══════════════════════════════════════════════════════════════════════════════
+TOTAL: 60 paquets/outils installés
+═══════════════════════════════════════════════════════════════════════════════
