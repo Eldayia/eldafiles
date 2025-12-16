@@ -12,7 +12,8 @@ This repository (`eldafiles`) centralizes personal configuration files (dotfiles
 eldafiles/
 ├── windows/
 │   ├── install/          # Windows installation scripts
-│   └── config/           # Windows configuration files (currently empty)
+│   ├── config/           # Windows configuration files (currently empty)
+│   └── hyperv/           # Hyper-V virtualization scripts
 ├── linux/
 │   ├── install/          # Modular Linux installation scripts
 │   └── config/           # Linux configuration files (dotfiles)
@@ -93,11 +94,70 @@ The `linux/config/` directory contains dotfiles and configurations for:
 
 ## Windows Setup
 
+### Software Installation
+
 The Windows side uses:
 - `windows/install/downloadSoftware.bat` - Batch script that downloads 68+ applications using winget or curl
 - Downloads are organized into `Downloads/` subdirectories by application
 - Falls back to direct downloads if winget fails
 - Covers development tools, gaming platforms, productivity software, etc.
+
+### Hyper-V Virtualization Scripts
+
+The `windows/hyperv/` directory contains scripts for automated deployment of Linux VMs with GPU acceleration (GPU-PV) on Hyper-V.
+
+**Key Files:**
+- `deploy-vm-hyperv.ps1` - Main PowerShell script for VM deployment with GPU-PV support
+- `quick-deploy.bat` - Batch launcher that ensures proper UTF-8 encoding and admin privileges
+- `setup-hyperv-gpu.ps1` - GPU-PV configuration script
+- `start-hyperv.ps1` / `start-hyperv.bat` - VM startup scripts
+- `README-DEPLOIEMENT.md` - Deployment documentation (French)
+- `README-GPU.md` - GPU-PV configuration guide (French)
+- `INDEX.md` - Overview of available scripts
+
+**Features:**
+- Automated Hyper-V feature detection and installation
+- GPU-PV (GPU Paravirtualization) support for Intel/NVIDIA/AMD GPUs
+- Dynamic memory and CPU allocation
+- Network switch configuration (NAT/External)
+- Generation 2 VM with UEFI firmware
+- Secure Boot disabled for Linux compatibility
+- UTF-8 encoding for proper French character display
+- Idempotent operations (safe to re-run)
+
+**Script Architecture:**
+
+1. **deploy-vm-hyperv.ps1** - Comprehensive deployment script that:
+   - Checks Windows edition compatibility (Pro/Enterprise/Education required)
+   - Verifies/installs Hyper-V and required Windows features
+   - Detects GPU-PV compatible hardware
+   - Creates virtual switches (Default Switch or NAT)
+   - Configures VM with dynamic VHDX, memory, and CPU
+   - Mounts ISO and sets boot order
+   - Configures GPU partition adapter with optimal VRAM settings
+   - Handles UTF-8 encoding for correct display of accented characters
+
+2. **quick-deploy.bat** - Wrapper that:
+   - Sets console to UTF-8 (chcp 65001)
+   - Verifies administrator privileges
+   - Launches PowerShell with proper encoding configuration
+
+**Important Implementation Notes:**
+
+- **UTF-8 Encoding**: The scripts use UTF-8 with BOM for PowerShell compatibility. The batch file sets `[Console]::OutputEncoding` to ensure French characters display correctly.
+- **Error Handling**: Uses proper error handling with `try-catch` blocks and fallback mechanisms (e.g., external switch if internal NAT fails).
+- **Int64 Casting**: Memory calculations use explicit `[int64]` casting to avoid Int32 overflow errors with large memory values.
+- **Service Dependencies**: Checks that `vmms` (Virtual Machine Management Service) is running before VM operations.
+- **Parentheses in Strings**: Avoids parentheses in Write-Host strings to prevent PowerShell command interpretation issues.
+
+**Usage:**
+```powershell
+# Quick deployment with defaults (8GB RAM, 4 CPUs, 80GB disk)
+.\windows\hyperv\quick-deploy.bat
+
+# Custom deployment
+powershell.exe -ExecutionPolicy Bypass -File deploy-vm-hyperv.ps1 -VMName "Ubuntu" -Memory 16 -CPUCount 8 -ISOPath "C:\ISOs\ubuntu.iso"
+```
 
 ## Common Development Tasks
 

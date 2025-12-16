@@ -12,7 +12,8 @@ Dépôt centralisant mes fichiers de configuration et scripts d'installation pou
 eldafiles/
 ├── windows/          # Scripts et configurations Windows
 │   ├── install/      # Scripts d'installation et setup
-│   └── config/       # Fichiers de configuration
+│   ├── config/       # Fichiers de configuration
+│   └── hyperv/       # Scripts de virtualisation Hyper-V
 ├── linux/            # Scripts et configurations Linux
 │   ├── install/      # Scripts d'installation et setup
 │   └── config/       # Fichiers de configuration
@@ -25,6 +26,7 @@ eldafiles/
 - Scripts PowerShell pour l'installation automatique de logiciels
 - Fichiers de configuration d'applications Windows
 - Scripts de setup d'environnement de développement
+- **Scripts Hyper-V** : Déploiement automatique de VMs Linux avec accélération GPU 3D (GPU-PV)
 
 ### Linux
 - Scripts Bash pour l'installation de paquets
@@ -42,6 +44,9 @@ eldafiles/
 ```powershell
 # Exécuter un script d'installation
 .\windows\install\setup-dev-environment.ps1
+
+# Déployer une VM Linux avec Hyper-V et GPU-PV
+.\windows\hyperv\quick-deploy.bat
 ```
 
 ### Linux
