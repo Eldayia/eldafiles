@@ -1,5 +1,0 @@
-{
-  "interval": 10,
-  "format": "CPU: {usage}%"
-}
-

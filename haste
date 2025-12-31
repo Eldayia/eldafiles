@@ -1,0 +1,14 @@
+
+    Directory: C:\Users\jouan\Dev\eldafiles
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          16/12/2025    15:05                linux
+d----          13/12/2025    15:44                shared
+d----          16/12/2025    15:42                windows
+-a---          16/12/2025    15:09           8657 CLAUDE.md
+-a---          13/12/2025    16:11          62042 eldafiles.jpg
+-a---          16/12/2025    16:05              0 haste
+-a---          16/12/2025    15:08           1816 README.md
+la---          13/12/2025    15:53              0 WARP.md -> CLAUDE.md
+
